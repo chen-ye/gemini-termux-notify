@@ -1,0 +1,9 @@
+{
+  "name": "gemini-termux-notify",
+  "displayName": "Termux Native Notifications",
+  "version": "0.1.0",
+  "description": "Sends local system notifications via Termux:API when the agent finishes.",
+  "hooks": "./hooks/hooks.json",
+  "author": "Chen Ye",
+  "license": "MIT"
+}

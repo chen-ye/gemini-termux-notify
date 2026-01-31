@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "AfterAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "termux-notify-end",
+            "type": "command",
+            "command": "python3 ${extensionPath}/hooks/notify.py"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "termux-notify-alert",
+            "type": "command",
+            "command": "python3 ${extensionPath}/hooks/notify.py"
+          }
+        ]
+      }
+    ]
+  }
+}
