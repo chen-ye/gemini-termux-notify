@@ -25,3 +25,12 @@ This extension registers hooks for:
 - `Notification`: Triggers when an explicit notification is sent by the agent.
 
 The notification includes a click action that opens the Termux app.
+
+## Releasing
+
+To publish a new version:
+
+1.  Update the `version` field in `gemini-extension.json`.
+2.  Commit and push the change to the `main` branch.
+
+A GitHub Action will automatically detect the version change, create a git tag, and publish a GitHub Release.
